@@ -1,0 +1,32 @@
+.calculator__keys{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 40%;
+}
+
+button{
+    border: 0.2px solid black; 
+}
+
+.key--operator{
+    background-color: gray;
+}
+
+.key--equal{
+    grid-column: 4;
+    grid-row: 2 / 6;
+    background-color: orange;
+    border-radius: 0 0 5px;
+}
+
+button[value="0"]{
+    border-radius: 0 0 0 5px;
+}
+
+.calculator__display{
+    background-color: black;
+    text-align: end;
+    color: white;
+    width: 40%;
+    border-radius:5px 5px 0 0;
+}
